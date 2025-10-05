@@ -105,15 +105,6 @@ Verifier skipping breaks required runtime transforms (e.g., map replacement), of
 
 ---
 
-## Resume-ready blurb
-
-**Project:** *Evaluating SafeBPF’s Mitigation of CVE-2017-16995 on Linux Kernel v6.3.8*
-**Objective:** Investigated if the SafeBPF security module could prevent a known privilege escalation exploit (CVE-2017-16995) within the Linux eBPF subsystem.
-**Challenge & Approach:** As SafeBPF is only available on newer kernels (v6.3.8) where the CVE is patched, the core task was to re-create the vulnerability’s attack conditions in this modern environment using a QEMU VM.
-**Execution:** Attempted several methods to simulate the exploit, primarily by modifying the kernel's C source code to bypass the eBPF verifier, a key component in the original attack vector.
-**Findings & Conclusion:** The attempts revealed that bypassing the verifier often caused system stalls, uncovering its critical role in program execution, not just security. While a full exploit recreation was not achieved, in limited scenarios, SafeBPF was observed to alter the kernel's error handling, providing partial insight into its potential defensive capabilities.
-
----
 
 ## Acknowledgments
 
