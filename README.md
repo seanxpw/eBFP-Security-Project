@@ -1,4 +1,4 @@
-# eBFP-Security-Project
+# eBPF-Security-Project
 
 > CS202 Advanced Operating Systems — Security Project  
 > Evaluating **SafeBPF** against **CVE-2017-16995** in the Linux eBPF subsystem.
